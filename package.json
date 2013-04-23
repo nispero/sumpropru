@@ -1,0 +1,10 @@
+{
+    "name": "sumpropru",
+    "version": "0.0.1",
+    "description": "Sum in words ru",
+    "main": "sumpropru.js",
+    "repository" : {
+        "type" : "git",
+        "url" : "https://github.com/vasechika/sumpropru.git"
+    } 
+}
