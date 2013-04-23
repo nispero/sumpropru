@@ -1,4 +1,4 @@
-exports.sumPROPRU = function (sum) {
+exports.convert = function (sum) {
     var cifir_ru, sotN_ru, milion_ru, anDan_ru,
         scet, cifR, cfR, oboR;
 
