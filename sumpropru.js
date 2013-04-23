@@ -22,7 +22,7 @@ exports.convert = function (sum) {
         ed = Math.floor(delen - sot) - Math.floor((delen - sot) / 10) * 10;
         forDes = (des / 10 == 2 ? 'а' : '')
         forEd = (ed == 1 ? 'ин' : (ed == 2 ? 'е' : ''));
-        ffD = (ed > 4 ? 'ь' : (ed == 1 || scet < 3 ? (scet < 3 && ed < 2 ? 'ин' : (scet == 3 ? 'на' : (scet < 4 ? (ed == 2 ? 'а' : (ed == 4 ? 'е' : '')) : 'на'))) : (ed == 2 || ed == 4 ? 'е' : '')));
+        ffD = (ed > 4 ? 'ь' : (ed == 1 || scet < 3 ? (scet < 3 && ed < 2 ? 'ин' : (scet == 3 ? 'на' : (scet < 4 ? (ed == 2 ? 'а' : (ed == 4 ? 'е' : '')) : 'ин'))) : (ed == 2 || ed == 4 ? 'е' : '')));
         forTys = (des / 10 == 1 ? (scet < 3 ? 'ов' : '') : (scet < 3 ? (ed == 1 ? '' : (ed > 1 && ed < 5 ? 'а' : 'ов')) : (ed == 1 ? 'а' : (ed > 1 && ed < 5 ? 'и' : ''))));
         oprSot = (sotN_ru[sot / 100 - 1] != null ? sotN_ru[sot / 100 - 1] : '');
         oprDes = ' ' + (cifir_ru[des / 10 - 1] != null ? (des / 10 == 1 ? '' : (des / 10 == 4 || des / 10 == 9 ? anDan_ru[des / 10 - 1] : (des / 10 == 2 || des / 10 == 3 ? cifir_ru[des / 10 - 1] + forDes + 'дцать' : cifir_ru[des / 10 - 1] + 'ьдесят'))) : '');
